@@ -1,0 +1,19 @@
+
+version: 2
+
+models:
+    - name: total_cases_per_million
+      description: "Total COVID-19 cases per million people as of yesterday"
+      columns:
+          - name: location
+            description: "The primary key for this table"
+            tests:
+                - unique
+                - not_null
+    - name: covid_eu
+      description: "Total COVID-19 statistics"
+      columns:
+          - name: location
+            description: "Country name"
+            tests:
+                - not_null
