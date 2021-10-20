@@ -17,3 +17,15 @@ models:
             description: "Country name"
             tests:
                 - not_null
+    - name: covid_Belarus
+      description: "Total COVID-19 statistics in Belarus"
+      columns:
+          - name: location
+            description: "Country name"
+            tests:
+                - not_null
+          - name: date
+            description: 'Primary key'
+            tests:
+                - not_null
+                - unique
