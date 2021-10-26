@@ -2,7 +2,7 @@ with total_cases as (
 
     SELECT location, date, ROUND(total_cases_per_million, 0) total_cases_per_million
       FROM {{ ref('covid_eu')}} 
-     WHERE date = DATE_ADD(CURRENT_DATE(), INTERVAL -1 DAY)
+      WHERE date = '2021-10-18'
      ORDER BY total_cases_per_million DESC
 
 )
