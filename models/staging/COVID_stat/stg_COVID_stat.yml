@@ -1,0 +1,28 @@
+
+version: 2
+
+models:
+    - name: stg_total_cases_per_million
+      description: "Total COVID-19 cases per million people as for yesterday (statistic updates every day)"
+      columns:
+          - name: location
+            description: "The primary key for this table"
+            tests:
+                - unique
+                - not_null
+    - name: stg_covid_eu
+      description: "Total COVID-19 statistics by countries"
+      columns:
+          - name: location
+            description: "Country name"
+            tests:
+                - not_null
+    - name: stg_all_orders
+      description: "List of orders, ordered by ID"
+      columns:
+          - name: id
+            description: "Order id"
+            tests:
+                - not_null
+                - unique
+    

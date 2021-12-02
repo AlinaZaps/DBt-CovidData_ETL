@@ -1,0 +1,12 @@
+{% docs table_events %}
+
+One of the following values:
+
+|method       | definition                    |
+|-------------|-------------------------------|
+|credit_card  | Order was paid by credit card |
+|coupon       |Order was paid by coupon       |
+|bank_transfer|Order was paid by bank transfer|
+|gift_card.   |Order was paid by gift card    |
+
+{% enddocs %}
